@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Login</title>
+</head><link rel="stylesheet" href="AddReciptionistRelated.css">
+<script type="text/javascript">
+function login()
+{
+   var username=document.principalLogin.t1.value;
+   var password=document.principalLogin.t2.value;
+   if(username=="")
+   {
+	  alert("Please Enter ID:");
+	  document.principalLogin.t1.focus();
+	  return false;
+   }
+   if(password=="")
+   {
+	   alert("Please Enter Dirth Of Birth:");
+	   document.principalLogin.t2.focus();
+	   return false;
+   }
+}
+</script>
+<body>
+<div class="center">
+<h1>Student Login</h1>
+<form action="StudentLogin" method="post" name="principalLogin" onsubmit="return login();">
+
+<div class="txt_field">
+<input type="text" name="t1">
+<span></span>
+<label>Student ID</label>
+</div>
+
+<div class="txt_field">
+<input type="password" name="t2">
+<span></span>
+<label>DOB(ddmmyy)</label>
+</div>
+
+<a href=studentoptions><input type="submit" value="Login"></a>
+</body>
+</html>

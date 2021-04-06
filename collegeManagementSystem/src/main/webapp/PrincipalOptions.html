@@ -1,0 +1,32 @@
+<html>
+<title>options</title>
+<head>
+<link rel="stylesheet" href="AddReciptionistRelated.css">
+<script type="text/javascript">
+function button()
+{
+    alert("alert message");
+}
+function disableBackButton()
+{
+window.history.forward();
+}
+setTimeout("disableBackButton()", 0);
+</script>
+</head>
+<body>
+<div class="center">
+<h1>options</h1>
+<a href="addlecturers"><input type="button" value="Add Lecturers"></a>
+<a href="addreciptions"><input type="button" value="Add Reciption Staff"></a>
+<a href="addcourse"><input type="button" value="Add Course"></a>
+<a href="viewlecturers"><input type="button" value="View Lecturers"></a>
+<a href="viewreciptions"><input type="button" value="View Reciptionists"></a>
+<a href="viewcources"><input type="button" value="View Cources"></a>
+<a href="ViewStudents"><input type="button" value="View All Students"></a>
+<form action="principallogout" onsubmit="return to disableBackButton()">
+<input type="submit" value="logout">
+</form>
+</div>
+</body>
+</html>

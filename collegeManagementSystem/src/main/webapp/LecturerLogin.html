@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta charset="ISO-8859-1">
+<title>Lecturer Login Page</title>
+<head>
+<link rel="stylesheet" href="AddReciptionistRelated.css">
+<script type="text/javascript">
+function login()
+{
+   var username=document.principalLogin.t1.value;
+   var password=document.principalLogin.t2.value;
+   if(username=="")
+   {
+	  alert("Please Enter Username:");
+	  document.principalLogin.t1.focus();
+	  return false;
+   }
+   if(password=="")
+   {
+	   alert("Please Enter Password:");
+	   document.principalLogin.t2.focus();
+	   return false;
+   }
+}
+</script>
+</head>
+
+<body>
+<div class="center">
+<h1>Lecturer Login</h1>
+<form action="LecturerLogin" method="post" name="principalLogin" onsubmit="return login();">
+
+<div class="txt_field">
+<input type="text" name="t1">
+<span></span>
+<label>Username</label>
+</div>
+
+<div class="txt_field">
+<input type="password" name="t2">
+<span></span>
+<label>Password</label>
+</div>
+
+<a href=lectureroptions><input type="submit" value="Login"></a>
+
+<div class="signup_link">
+New User?<a href="createpassword">Create Password</a>
+</div>
+</form>
+</div>
+</body>
+</html>

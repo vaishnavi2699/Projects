@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Reciptionist Options</title>
+<link rel="stylesheet" href="AddReciptionistRelated.css">
+<script type="text/javascript">
+function disablebackbutton() 
+{
+	window.history.forward();
+}
+setTimeOut("disablebackbutton()",0);
+</script>
+</head>
+<body>
+<div class="center">
+<h1>options</h1>
+<a href="addstudents"><input type="button" value="Add Students"></a>
+<a href="viewallstudents"><input type="button" value="View All Students"></a>
+<a href="viewcourses"><input type="button" value="View Students By Course"></a>
+<a href="reciptionistlogout" onsubmit="return disablebackbutton()"><input type="submit" value="logout"></a>
+</div>
+</body>
+</body>
+</html>

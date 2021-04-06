@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Options</title>
+<link rel="stylesheet" href="AddReciptionistRelated.css">
+<script type="text/javascript">
+function disablebackbutton() 
+{
+	window.history.forward();
+}
+setTimeOut("disablebackbutton()",0);
+</script>
+</head>
+<body>
+<div class="center">
+<h1>options</h1>
+<a href="myfeeremainders"><input type="button" value="Fee Remainder"></a>
+<a href="checkmymarks"><input type="button" value="Check Result"></a>
+<a href="myfeesturcture"><input type="button" value="My Fee Structure"></a>
+<a href="studentlogout" onsubmit="return disablebackbutton()"><input type="submit" value="logout"></a>
+</div>
+</body>
+</html>

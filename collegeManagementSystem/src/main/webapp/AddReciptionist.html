@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<meta charset="ISO-8859-1">
+<title>Add Reciptionist</title>
+<head>
+<link rel="stylesheet" href="AddReciptionistRelated.css">
+<script type="text/javascript">
+function add()
+{
+   var id=document.addlecturer.t1.value;
+   var fullname=document.addlecturer.t2.value;
+   var username=document.addlecturer.t3.value;
+   var email=document.addlecturer.t4.value;
+   var subject=document.addlecturer.t5.value;
+   if(id=="")
+   {
+      alert("Please Enter ID:")
+      document.addlecturer.t1.focus()
+      return false;
+   }
+   if(fullname=="")
+   {
+      alert("Please Enter fullname:")
+      document.addlecturer.t2.focus()
+      return false;
+   }
+   if(username=="")
+   {
+      alert("Please Enter username:")
+      document.addlecturer.t3.focus()
+      return false;
+   }
+   if(email=="")
+   {
+      alert("Please Enter email:")
+      document.addlecturer.t4.focus()
+      return false;
+   }
+}
+</script>
+</head>
+
+<body>
+<div class="center">
+<h1>Add Reciptionist</h1>
+<form action="AddRecptionist" method="post" name="addlecturer" onsubmit="return add();">
+
+
+<div class="txt_field">
+<input type="text" name="t2">
+<span></span>
+<label>Fullname</label>
+</div>
+
+<div class="txt_field">
+<input type="text" name="t3">
+<span></span>
+<label>Username</label>
+</div>
+
+<div class="txt_field">
+<input type="text" name="t4">
+<span></span>
+<label>Email</label>
+</div>
+
+
+<div class="signup_link">
+<input type="submit" value="ADD RECIPTIONIST">
+</div>
+
+</form>
+</div>
+</body>
+</html>
