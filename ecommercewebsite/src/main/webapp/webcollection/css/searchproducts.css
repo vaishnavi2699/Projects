@@ -1,0 +1,364 @@
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:'montserrat';
+}
+header
+{
+   width:100%;
+   background-color: #fdfffc;
+}
+.head
+{
+   width:100%;
+   height:100%;
+   display: flex;
+   align-items: center; 
+}
+.logo
+{
+   width:15%;
+   align-items:initial;
+   font-size: 25px;
+}
+.logo img
+{
+	width:200px;
+    height: auto; 
+}
+.nav
+{
+   width:100%;
+   text-align: right;
+   padding-right: 18px;
+}
+.nav li
+{
+   display: inline-block;
+   padding: 8px;
+   list-style: none;
+}
+.nav li a
+{
+   text-decoration: none;
+   color: black;
+   font-size: 25px;
+}
+.search
+{
+   background: #457b9d;
+    width:100%;
+   display:flex;
+   flex:content;
+   padding: 10px;
+}
+.result
+{
+   background-color: #f1faee;
+   font-size: 20px;
+   padding: 20px;
+   
+}
+.result a
+{
+	text-decoration: none;
+}
+.result input[type="submit"]
+{
+   width:50%;
+   height:46px;
+   font-size: 20px;
+   font-family: sans-serif;
+    border-radius:10px;
+}
+.search input[type="text"]
+{
+   width:500px;
+   height:46px;
+   font-size: 20px;
+   border-radius:10px;
+   margin-left: 230px; 
+}
+.search input[type="submit"]
+{
+   width:100px;
+   height:46px;
+   font-size: 20px;
+    border-radius:10px;
+}
+
+.dropdown-button {
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    border-radius:10px;
+    height:46px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-list a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-list a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown:hover .dropdown-button {
+    background-color: #adb5bd;
+}
+.dropdown-button1 {
+    color: black;
+    padding: 10px;
+    font-size: 25px;
+    border:none;
+    height:46px;
+    background-color: transparent;
+}
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-list1 {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+}
+.dropdown-list1 a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+.dropdown-list1 a:hover {
+    background-color: #ddd;
+}
+.dropdown1:hover .dropdown-list1 {
+    display: block;
+}
+
+.menu ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li
+{
+   padding: 15px;
+   position: relative;
+   width:130px;
+   background-color: #34495E;
+   cursor:pointer;
+   border-right: 5px solid #F1C40F;
+   border-top: 1px solid #BDC3C7;
+   -webkit-transition:all 0.3s;
+   -o-transition: all 0.3s;
+   transition:all 0.3s;
+   color:#fff;
+}
+.menu ul li:hover
+{
+   background-color: #d90429;
+}
+.menu > ul > li
+{
+  border-right: 5px solid #F1C40F;
+}
+.menu ul ul
+{
+   transition:all 0.3s;
+   opacity: 0;
+   position: absolute;
+   visibility: hidden;
+   left: 100%;
+   top: -2%;
+}
+.menu ul li:hover > ul
+{
+   opacity: 1;
+   visibility: visible;
+}
+.menu > ul > li:nth-of-type(1)::after
+{
+   content: "+";
+   position: absolute;
+   margin-left: 9%;
+   color: #fff;
+   font-size: 20px;
+}
+.menu > ul > li:nth-of-type(2)::after
+{
+   content: "+";
+   position: absolute;
+   margin-left: 30%;
+   color: #fff;
+   font-size: 20px;
+}
+.menu > ul > li:nth-of-type(3)::after
+{
+   content: "+";
+   position: absolute;
+   margin-left: 35%;
+   color: #fff;
+   font-size: 20px;
+}
+.container {
+  display: block;
+  position: relative;
+   padding-left: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.container1 input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container1:hover input[type="radio"] ~ .checkmark1 {
+  background-color: #ccc;
+}
+
+.container1 input[type="radio"]:checked ~ .checkmark1 {
+  background-color: #2196F3;
+}
+
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container1 input[type="radio"]:checked ~ .checkmark1:after {
+  display: block;
+}
+
+.container1 .checkmark1:after {
+  top: 5px;
+  left: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+}
+.dropbtn
+{
+	width:100px;
+   height:46px;
+   font-size: 20px;
+    border-radius:10px;
+	cursor: pointer;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.content
+{
+	display: none;
+	position: absolute;
+}
+.content a{
+	color: black;
+	padding: 8px;
+	display: block;
+	text-decoration: none;
+}
+.dropdown:hover .content{
+	display: block;
+}

@@ -1,0 +1,308 @@
+body
+{
+  background: hsla(332, 53%, 82%, 1);
+
+background: linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E9B7CE", endColorstr="#D3F3F1", GradientType=1 );
+  font-size: 16px;
+}
+header
+{
+   width:100%;
+   background-color: #fdfffc;
+}
+.head
+{
+   width:100%;
+   height:100%;
+   display: flex;
+   align-items:flex-end; 
+}
+.logo
+{
+   width:15%;
+   align-items:initial;
+   font-size: 25px;
+}
+.logo img
+{
+	width:200px;
+    height: auto; 
+}
+.nav
+{
+   width:100%;
+   text-align: right;
+   padding-right: 10px;
+}
+.nav li
+{
+   display: inline-block;
+   padding: 8px;
+   list-style: none;
+}
+.nav li a
+{
+   text-decoration: none;
+   color: black;
+   font-size: 25px;
+}
+*,
+.flex-wrap:before,
+.flex-wrap:after
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.flex-wrap input,fieldset
+{
+   -webkit-appearance:none;
+   -moz-appearance:none;
+   appearance:none;
+   border: 0;
+   padding: 0;
+   margin: 0;
+   min-width: 0;
+   font-size: 1rem;
+   font-family: inherit;
+}
+.no-touchevents .btn.btn--secondary:hover
+{
+   -webkit-transform:none;
+   transform:none;
+}
+input[type="radio"]
+{
+  position:fixed;
+  left:-100px;
+}
+[id="sign-in"]:checked ~ input.sign-in,[id="sign-up"]:checked ~ input.sign-up,[id="reset"]:checked ~ input.reset
+{
+  max-height: 40px;
+  padding:10px;
+  margin: 10px;
+  opacity: 1;
+  font-size: 20px;
+}
+[id="sign-in"]:checked ~button:before
+{
+  content: "Sign-In";
+}
+[id="sign-up"]:checked ~button:before
+{
+  content: "Sign-Up";
+}
+[id="reset"]:checked ~button:before
+{
+  content: "Reset Password";
+}
+.flex-wrap input:not([type="radio"])
+{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+   appearance:none;
+   background-color: #fff;
+   display: block;
+   -webkit-transition:300ms ease;
+   transition:300ms ease;
+   border-radius:7px;
+   border: 0;
+   max-height: 0;
+   margin: 0;
+   padding: 0 10px;
+   width: 250px;
+   opacity: 0;
+   font-size: 16px;
+   text-align: center;
+   outline: 0; 
+}
+.no-touchevents .btn.btn--main-cta:hove
+{
+   -webkit-transform:scale(1.03);
+   transform:scale(1.03);
+}
+.flex-wrap label:after
+{
+	content: "";
+	border: 10px solid transparent;
+	position: absolute;
+	bottom: -10px;
+	left: calc(50% - 10px);
+	-webkit-transition:inherit;
+	transition:inherit;
+}
+[id="sign-in"]:checked ~ [for="sign-in"]:after,[id="sign-up"]:checked ~ [for="sign-up"]:after,[id="reset"]:checked ~ [for="reset"]:after
+{
+    border-bottom-color: #fff;
+}
+.flex-wrap
+{
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-pack:center;
+   justify-content: center;
+   -webkit-box-align:center;
+   align-items: center;
+   flex-wrap:wrap;
+   height: 300px;
+   text-align: center; 
+}
+button
+{
+   width: 250px;
+   height: 40px;
+   border-radius:7px;
+   background-color: cornflwerblue;
+   font-size: 0;
+   color: black;
+   border: 0;
+   font-weight: 700;
+   -webkkit-appearance:none;
+   -moz-appearance:none;
+   appearance:none; 
+}
+button:before
+{
+  font-size: 16px;
+}
+.flex-wrap label
+{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition:300ms ease;
+   transition:300ms ease;
+   width: calc(100%/3 - 4px);	
+}
+.center
+{
+   position:absolute;
+   top:50%;
+   left:50%;
+   font-family:'montserrat';
+   transform:translate(-50%,-50%);
+   width:400px;
+   background:white;
+   border-radius:10px;
+}
+.center h1
+{
+   font-size:25px;
+   text-align:center;
+   padding: 20px 0 20px 0;
+   border-bottom:1px solid silver;
+}
+.center form
+{
+  padding:0 40px;
+  box-sizing:border-box;
+}
+form .txt_field
+{
+   position:relative;
+   border-bottom:2px #adadad;
+   margin:30px 0;
+}
+.txt_field input
+{
+  width:100%;
+  height:40px;
+  padding:0 5px;
+  font-size: 16px;
+  border: none;
+  background:none;
+  outline:none;
+}
+.txt_field label
+{
+  position:absolute;
+  top:50%;
+  left:5px;
+  color:#adadad;
+  transform:translateY(-50%);
+  font-size:16px;
+  pointer-events:none;
+  transition:.5s;
+}
+.txt_field span::before 
+{
+   content:'';
+   position:absolute;
+   top:40px;
+   left:0;
+   width:0%;
+   height:1px;
+   background:#2691d9;
+   transition:.5s;	
+}
+.txt_field input:focus~label,
+.txt_field input:valid~label 
+{
+	top:-5px;
+	color:#2691d9;
+	font-size:14px;
+}
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before 
+{
+   width:100%;	
+}
+.pass
+{
+  margin:-5px 0 20px 5px;
+  color:#a6a6a6;
+  cursor:pointer;
+}
+.pass:hover{text-decoration:underline;}
+input[type="submit"]
+{
+  width:100%;
+  height:50px;
+  border:1px solid;
+  background:#2691d9;
+  border-radius:25px;
+  font-size:18px;
+  color:#e9f4fb;
+  font-weight:700;
+  cursor:pointer;
+  outline:none;
+}
+input[type="submit"]:hover 
+{
+  border-color:#2691d9;
+  transistion:.5s;	
+}
+.signup_link
+{
+  margin:30px 0;
+  text-align:center;
+  font-size: 16px;
+  color:#666666;
+}
+.signup_link a
+{
+  color:#2691d6;
+  text-decoration:none;
+  padding-left:5px;
+}
+.signup_link a:hover {text_decoration:underline;}
+h3
+{
+	font-weight: 800;
+	font-size: 50px;
+	letter-spacing: .08em;
+	background-color: #d90429;
+	-webkit-background-clip:text;
+	-moz-background-clip:text;
+	background-clip:text;
+	color: white;
+	text-shadow: rgba(245,245,245,0.5) 3px 5px 1px;
+}
